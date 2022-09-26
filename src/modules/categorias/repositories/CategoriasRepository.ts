@@ -10,8 +10,8 @@ class CategoriasRepository implements ICategoriasRepository{
         this.categoriaRepository = getRepository(Categoria);
     }
     async create({ name, description }: ICreateCategoriaDTO): Promise<void> {
-        let categoria = new Categoria();
-         categoria = this.categoriaRepository.create({name, description });
+        
+        const categoria = this.categoriaRepository.create({name, description });
         await this.categoriaRepository.save(categoria);
     }
     async findByNome(nome: string): Promise<Categoria> {
