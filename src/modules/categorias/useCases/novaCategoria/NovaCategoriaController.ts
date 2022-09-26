@@ -4,9 +4,9 @@ import { NovaCategoriaUseCase } from "./NovaCategoriaUseCase";
 
 class NovaCategoriaController{
     async handle(request: Request, response: Response): Promise<Response>{
-        const {nome, descricao} = request.body;
+        const {name, description} = request.body;
         const novaCategoriaUseCase = container.resolve(NovaCategoriaUseCase);
-        await novaCategoriaUseCase.execute({nome, descricao});
+        await novaCategoriaUseCase.execute({name, description});
         return  response.status(201).send("OK");
 
     }

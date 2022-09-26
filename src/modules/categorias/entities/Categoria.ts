@@ -6,10 +6,10 @@ class Categoria{
     id?: string;
 
     @Column()
-    nome: string;
+    name: string;
 
     @Column()
-    descricao: string;
+    description: string;
 
     @CreateDateColumn()
     created_at: Date;

@@ -14,11 +14,11 @@ export class CreateCategoria1664150435254 implements MigrationInterface {
                             isPrimary: true,
                         },
                         {
-                            name: "nome",
+                            name: "name",
                             type: "varchar",
                         },
                         {
-                            name: "descricao",
+                            name: "description",
                             type: "varchar",
                         },
                         {
