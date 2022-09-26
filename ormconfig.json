@@ -2,12 +2,13 @@
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "postgres",
+    "username": "antonio",
     "password": "2312",
-    "database": "bookstore",
+    "database": "db_store",
     "migrations": ["./src/database/migrations/*.ts"],
     "entities":["./src/modules/**/entities/*.ts"],
     "cli":{
-        "migrationsDir": "./src/database/migrations/"
+        "migrationsDir": "./src/database/migrations",
+        "entitiesDir": "./src/modules/**/entities"
     }
 }
