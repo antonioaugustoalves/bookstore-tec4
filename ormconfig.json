@@ -6,9 +6,8 @@
     "password": "2312",
     "database": "bookstore",
     "migrations": ["./src/database/migrations/*.ts"],
-    "enntities":["./src/modules/**/entities/*.ts"],
+    "entities":["./src/modules/**/entities/*.ts"],
     "cli":{
-        "migrationsDir": "./src/database/migrations",
-        "entitiesDir":"./src/modules/**/entities"
+        "migrationsDir": "./src/database/migrations/"
     }
 }

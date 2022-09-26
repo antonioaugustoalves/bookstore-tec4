@@ -4,5 +4,6 @@ import { ICategoriasRepository } from "../modules/categorias/repositories/ICateg
 
 container.registerSingleton<ICategoriasRepository>(
     "CategoriasRepository",
-    CategoriasRepository
+    CategoriasRepository,
+    
 );

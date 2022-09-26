@@ -4,10 +4,13 @@ import {v4 as uuidv4} from "uuid";
 class Categoria{
     @PrimaryColumn()
     id?: string;
+
     @Column()
     nome: string;
+
     @Column()
     descricao: string;
+
     @CreateDateColumn()
     created_at: Date;
 
@@ -18,4 +21,4 @@ class Categoria{
     }
 }
 
-export { Categoria}
+export {Categoria}
