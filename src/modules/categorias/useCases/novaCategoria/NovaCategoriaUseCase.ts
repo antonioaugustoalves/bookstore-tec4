@@ -18,7 +18,8 @@ class NovaCategoriaUseCase{
             throw new Error("Esta categoria já existe.");
         }
 
-        this.categoriasRepository.create({name, description});
+        const categoria = this.categoriasRepository.create({name, description});
+        console.log(categoria);
     }
 
 }

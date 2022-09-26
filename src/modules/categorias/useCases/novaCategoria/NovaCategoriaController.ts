@@ -6,7 +6,8 @@ class NovaCategoriaController{
     async handle(request: Request, response: Response): Promise<Response>{
         const {name, description} = request.body;
         const novaCategoriaUseCase = container.resolve(NovaCategoriaUseCase);
-        await novaCategoriaUseCase.execute({name, description});
+        const categoria = await novaCategoriaUseCase.execute({name, description});
+        console.log(categoria);
         return  response.status(201).send("OK");
 
     }
