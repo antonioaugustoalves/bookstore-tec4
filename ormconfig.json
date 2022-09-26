@@ -2,7 +2,7 @@
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "antonio",
+    "username": "postgres",
     "password": "2312",
     "database": "db_store",
     "migrations": ["./src/database/migrations/*.ts"],

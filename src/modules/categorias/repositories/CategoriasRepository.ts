@@ -15,8 +15,8 @@ class CategoriasRepository implements ICategoriasRepository{
         const categoria = this.categoriaRepository.create({name, description });
         await this.categoriaRepository.save(categoria);
     }
-    async findByNome(nome: string): Promise<Categoria> {
-        const categoria = await this.categoriaRepository.findOne(nome);
+    async findByNome(name: string): Promise<Categoria> {
+        const categoria = await this.categoriaRepository.findOne({name});
         return categoria;
     }
     async list(): Promise<Categoria[]> {
